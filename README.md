@@ -1,50 +1,32 @@
-# React + TypeScript + Vite
+# Prueba Técnica - Proyecto con Vite, React y Google Maps
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto es una solución para la prueba técnica de desarrollo de software. Implementa un sistema de usuario, un buscador de restaurantes y almacenamiento del historial de búsqueda, utilizando tecnologías modernas en el frontend y backend.
 
-Currently, two official plugins are available:
+## 🚀 Tecnologías Utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Frontend**: Vite + React.js
+- **Autenticación**: JWT para el manejo de sesiones
+- **Mapas**: Google Maps API para mostrar restaurantes cercanos
 
-## Expanding the ESLint configuration
+## 📌 Requisitos Previos
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Antes de ejecutar el proyecto, asegúrate de tener instalado:
+- [Node.js](https://nodejs.org/) (v22 o superior recomendado)
+- [MongoDB](https://www.mongodb.com/) (local)
+- [Yarn](https://yarnpkg.com/getting-started/install) como gestor de paquetes
 
-- Configure the top-level `parserOptions` property like this:
+## 🔧 Instalación y Configuración
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+### 1️⃣ Clonar el Repositorio
+```sh
+git clone https://github.com/BearPandaDay/prueba-tecnica-client.git
 ```
+Dirigete a la carpeta del proyecto
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+## 🔧 corer el proyecto
 ```
+yarn install
+
+yarn dev
+
+

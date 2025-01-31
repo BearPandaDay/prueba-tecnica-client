@@ -1,0 +1,69 @@
+.father-content {
+  min-width: 100vw;
+  min-height: 100vh;
+  // background-color: red;
+  display: flex;
+
+  .siderbar {
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+    height: 100vh;
+    min-width: 250px;
+    background-color: rgb(163, 203, 255);
+
+    .logo {
+      // background-color: aqua;
+      margin: 1rem;
+      width: 80%;
+      aspect-ratio: 1/1;
+      border-radius: 100%;
+    }
+
+    .menu {
+      width: 80%;
+      height: 100%;
+      
+      .menuin {
+        width: 100%;
+        height: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-weight: bold;
+        text-align: left;
+        margin: 5px 0px;
+
+        background-color: aliceblue;
+      }
+    }
+  }
+
+  .topbar {
+    height: 100px;
+    min-width: calc(100vw - 250px);
+    background-color: rgb(220, 235, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .topbar-left {
+      margin-left: 10px;
+      font-size: 3rem;
+    }
+    .topbar-right { 
+      button {
+        border-radius: 100%;
+        background-color: red;
+        aspect-ratio: 1/1;
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .content-children {
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+}

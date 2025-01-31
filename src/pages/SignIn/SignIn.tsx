@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useNavigate } from "react-router";
 import { Auth } from "../../api/auth";
 import { useAuth } from "../../hooks";
@@ -37,6 +37,8 @@ export function SignIn() {
     alert("Seccion iniciada.");
     navigate('/user/home');
   }
+  
+
 
   const fetchSignIn = async () => {
     const response = await authController.postSignIn(formData);

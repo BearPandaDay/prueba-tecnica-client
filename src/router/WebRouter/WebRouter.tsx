@@ -1,10 +1,15 @@
 import { Route, Routes } from "react-router";
-import { LayoutSinSup } from "../../layouts/LayoutSinSup";
+import { LayoutSinSup, LayoutClient } from "../../layouts";
 import { Home, SignUp, SignIn } from "../../pages";
 import { useAuth } from "../../hooks";
+import { UserHome } from "../../pages/AuthenticatedClient";
+import { useNavigate } from "react-router";
+import { NearbyRestaurants } from "../../pages";
 
 export function WebRouter() {
   const { user } = useAuth();
+
+  const navigate = useNavigate();
   
   const loadLayout = (Layout, Page) => {
     return (
@@ -24,7 +29,9 @@ export function WebRouter() {
         </>
         :
         <>
-          <Route path="/user/home" Component={() => <h1>USER / HOME</h1>}/>
+          <Route path="/user/home" element={loadLayout(LayoutClient, UserHome)}/>
+          <Route path="/user/nearbyrestaurants" element={loadLayout(LayoutClient, NearbyRestaurants)}/>
+          {/* <Route path="/*" element={() => navigate("/user/home")}/> */}
         </>
       }
       <Route path="/*" Component={() => (<h1>PAGE NOT FOUND</h1>)}/>

@@ -4,7 +4,6 @@ export class User {
   async getMe(accessToken) {
     try {
       const url = `${HOST}/api/${API_VERSION}/user/me`;
-      console.log("🚀 ~ User ~ getMe ~ url:", url)
       
       const params = {
         headers: {

@@ -26,7 +26,7 @@ export function LayoutClient({children}) {
         <div className="topbar">
           <div className="topbar-left">PRUEBA TECNICA</div>
           <div className="topbar-right">
-            <button onClick={funLogout}>Logout</button>
+            <button className="close-button" onClick={funLogout}>Logout</button>
           </div>
         </div>
         <div className="content-children">

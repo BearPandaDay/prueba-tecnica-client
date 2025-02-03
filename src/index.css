@@ -68,9 +68,8 @@ button:focus-visible {
 } */
 
 * {
-  border: dotted 1px red;
+  /* border: dotted 1px red; */
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-
 }
 
 :root {
